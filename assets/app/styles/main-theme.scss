@@ -1,0 +1,24 @@
+@import '~@angular/material/core/theming/all-theme';
+@import "./hub-theme";
+@import url('https://fonts.googleapis.com/css?family=Prompt|Roboto:300');
+
+@include mat-core();
+$primary: mat-palette($mat-brown, 300);
+$accent:  mat-palette($mat-pink, A200, A100, A400);
+
+$warn:    mat-palette($mat-red);
+
+
+$theme: mat-light-theme($primary, $accent, $warn);
+
+@include hub-themes($theme)
+@include angular-material-theme($theme);
+
+body{
+  font-family: 'Prompt', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+[md-button],[md-rised-button]{
+  text-transform: uppercase ;
+}

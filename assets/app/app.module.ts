@@ -5,22 +5,21 @@ import 'hammerjs';
 
 import { AppComponent } from "./app.component";
 import {ReactiveFormsModule,FormsModule} from "@angular/forms";
-import {TestComponent} from "./test/test.component";
+import {NavModule} from "./nav-center/nav.module";
 
 @NgModule({
     declarations: [
-        AppComponent,
-        TestComponent
+        AppComponent
     ],
     imports: [
         BrowserModule,
         MaterialModule.forRoot(),
         FormsModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        NavModule
     ],
     bootstrap: [
-        AppComponent,
-        TestComponent
+        AppComponent
     ]
 })
 export class AppModule {

@@ -5,7 +5,8 @@
     "noImplicitAny": false,
     "sourceMap": false,
     "emitDecoratorMetadata": true,
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "types": ["hammerjs"]
   },
   "exclude": [
     "node_modules",
